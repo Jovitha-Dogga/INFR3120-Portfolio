@@ -1,0 +1,158 @@
+
+/* 
+   DESKTOP STYLESHEET
+   Portfolio: Jovitha
+ */
+
+/* Sets the default appearance of the page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9E2DC;
+    color: #15333D;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Styles the header with a gradient */
+header {
+    background: linear-gradient(135deg, #7A8C98, #15333D);
+    color: #E9E2DC;
+    padding: 30px 8%;
+    text-align: center;
+}
+
+/* Styles the main heading */
+header h1 {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 38px;
+}
+
+/* Styles the navigation bar */
+nav {
+    background-color: #C1A3A1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles the navigation links */
+nav a {
+    display: inline-block;
+    color: #3F0D0C;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 3px;
+}
+
+/* Changes navigation links when hovered over them */
+nav a:hover {
+    background-color: #E9E2DC;
+    text-decoration: underline;
+}
+
+/* Sets the width of the main content */
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Styles the articles and the sections */
+article,
+section {
+    background: linear-gradient(#FFFFFF, #E9E2DC);
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #C1A3A1;
+}
+
+/* Styles the second-level headings */
+h2 {
+    color: #824D5D;
+    font-family: "Times New Roman", Times, serif;
+    border-bottom: 2px solid #7A8C98;
+    padding-bottom: 6px;
+}
+
+/* Keeps images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sets a suitable width for the introduction video */
+video {
+    display: block;
+    width: 640px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Styles the links in the main content */
+main a {
+    color: #824D5D;
+}
+
+/* Changes main links when hovered over them */
+main a:hover {
+    color: #15333D;
+}
+
+/* Putting the form labels on separate lines */
+form label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+/* Styles the form fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #7A8C98;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+/* Allowes the comments field to be resized vertically */
+textarea {
+    resize: vertical;
+}
+
+/* Styles the submit button */
+input[type="submit"] {
+    background-color: #15333D;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    margin-top: 18px;
+    border: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Changes the submit button colour when hovered over it */
+input[type="submit"]:hover {
+    background-color: #824D5D;
+}
+
+/* Styles the footer */
+footer {
+    background-color: #15333D;
+    color: #E9E2DC;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Keeps the footer links readable */
+footer a {
+    color: #E9E2DC;
+}

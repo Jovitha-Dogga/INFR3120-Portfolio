@@ -1,0 +1,148 @@
+/* 
+   TABLET STYLESHEET
+   Portfolio: Jovitha
+*/
+
+/* Sets the page appearance */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9E2DC;
+    color: #15333D;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* Styles the header with a gradient */
+header {
+    background: linear-gradient(135deg, #7A8C98, #15333D);
+    color: #E9E2DC;
+    padding: 25px 5%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Styles the navigation */
+nav {
+    background-color: #C1A3A1;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #3F0D0C;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 2px;
+}
+
+nav a:hover {
+    background-color: #E9E2DC;
+    text-decoration: underline;
+}
+
+/* Sets the main content width */
+main {
+    width: 90%;
+    margin: 25px auto;
+}
+
+/* Styles articles and sections */
+article,
+section {
+    background: linear-gradient(#FFFFFF, #E9E2DC);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #C1A3A1;
+}
+
+/* Styles second-level headings */
+h2 {
+    color: #824D5D;
+    border-bottom: 2px solid #7A8C98;
+    padding-bottom: 6px;
+}
+
+/* Keeps images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sets a suitable video width */
+video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Styles links in the main content */
+main a {
+    color: #824D5D;
+}
+
+main a:hover {
+    color: #15333D;
+}
+
+/* Puts the form labels on separate lines */
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* Styles the form fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #7A8C98;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+/* Allows the comments field to be resized vertically */
+textarea {
+    resize: vertical;
+}
+
+/* Styles the submit button */
+input[type="submit"] {
+    background-color: #15333D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin-top: 16px;
+    border: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #824D5D;
+}
+
+/* Styles the footer */
+footer {
+    background-color: #15333D;
+    color: #E9E2DC;
+    text-align: center;
+    padding: 18px;
+    margin-top: 25px;
+}
+
+footer a {
+    color: #E9E2DC;
+}

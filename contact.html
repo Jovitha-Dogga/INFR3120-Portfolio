@@ -49,24 +49,33 @@
 
         <!--Main content of the Contact Me page-->
         <main>
-            <h1> Contact Me</h1>
+            <h1>Contact Me</h1>
+            <p>Send me your questions, comments and project related queries!</p>
             <!--Contact form will go here-->
             <!--The form collects info from visitors who want to contact me.
                 Week 2 taught me that form controls collect user input.-->
 
-            <form action="#" method="post">
+            <!--I learnt this part from Week-2, page 16 and it was very helpful!-->
+            <form action="mailto:jovitha.dogga@ontariotechu.net" method="post" enctype="text/plain">
 
-                <label for="name">Name:</label>  <!--connects the label to the input using its id-->
-                <input type="text" id="name" name="name" required>   
+                <!--The for attribute connects each label to its own input id-->
+                <!--Week-2 page 29-31-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Your full name" required>
 
-                <label for="email">Email:</label>  
-                <input type="email" id="email" name="email" required>   
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="you@example.com" required>
 
-                <label for="cell">Cell Number:</label> 
-                <input type="tel" id="cell" name="cell" required>  
-                
-                <label for="comments">Comments:</label>  
-                <textarea id="comments" name="comments" rows="5" cols="40" required></textarea>
+                <label for="cell">Cell Number:</label>
+                <input type="tel" id="cell" name="cell"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" cols="40"
+                    placeholder="Type your message here..." required></textarea>
 
                 <input type="submit" value="Submit">
 
