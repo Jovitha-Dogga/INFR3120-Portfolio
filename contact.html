@@ -1,0 +1,89 @@
+<!-- This declares that this doc is an HTML5 doc-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Specifies UTF-8 character encoding for the webpage-->
+        <meta charset="UTF-8">
+
+        <!--Makes the webpage use the actual width of the devce viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Jovitha | Contact Me</title>
+
+        <!--
+            Week 3 taught me to use separate CSS
+            stylesheets for different viewport sizes.
+            The browser chooses the appropriate stylesheet based on screen width.
+        --> 
+
+        <!-- full-size monitor style sheet-->
+        <link href="css/desktop.css" rel="stylesheet" type="text/css"
+            media="only screen and (min-width:961px)">
+
+        <!-- tablet style sheet-->
+        <link href="css/tablet.css" rel="stylesheet" type="text/css"
+            media="only screen and (min-width:481px) and (max-width:960px)">
+
+        <!-- phone style sheet-->
+        <link href="css/mobile.css" rel="stylesheet" type="text/css"
+            media="only screen and (max-width:480px)">
+
+    </head>
+
+    <body>
+
+        <!-- This semantic header contains the website navigation-->
+
+        <header>
+
+            <nav>
+                <!--Navigation links added here-->
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+
+            </nav>
+
+        </header>
+
+        <!--Main content of the Contact Me page-->
+        <main>
+            <h1> Contact Me</h1>
+            <!--Contact form will go here-->
+            <!--The form collects info from visitors who want to contact me.
+                Week 2 taught me that form controls collect user input.-->
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label>  <!--connects the label to the input using its id-->
+                <input type="text" id="name" name="name" required>   
+
+                <label for="email">Email:</label>  
+                <input type="email" id="email" name="email" required>   
+
+                <label for="cell">Cell Number:</label> 
+                <input type="tel" id="cell" name="cell" required>  
+                
+                <label for="comments">Comments:</label>  
+                <textarea id="comments" name="comments" rows="5" cols="40" required></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </main>
+
+        <!--Semantic footer containing contact and copyright information-->
+        <footer>
+
+            <p>
+                Contact: jovitha.dogga@ontariotechu.net
+            </p>
+
+            <p>
+                &copy; 2026 Jovitha. All rights reserved.
+            </p>
+        </footer>
+
+    </body>
+</html>

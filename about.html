@@ -1,0 +1,70 @@
+<!-- This declares that this doc is an HTML5 doc-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Specifies UTF-8 character encoding for the webpage-->
+        <meta charset="UTF-8">
+
+        <!--Makes the webpage use the actual width of the devce viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Jovitha | About</title>
+
+        <!--Week 3 taught me to use seperate CSS
+            stylesheets for different viewport sizes.
+            The browser chooses the appropriate style seet based om screen the width
+        -->
+
+        <!-- full-size monitor style sheet-->
+        <link href="css/desktop.css" rel="stylesheet" type="text/css"
+            media="only screen and (min-width:961px)">
+
+        <!-- tablet style sheet-->
+        <link href="css/tablet.css" rel="stylesheet" type="text/css"
+            media="only screen and (min-width:481px) and (max-width:960px)">
+
+        <!-- phone style sheet-->
+        <link href="css/mobile.css" rel="stylesheet" type="text/css"
+            media="only screen and (max-width:480px)">
+
+    </head>
+
+    <body>
+
+        <!-- This semantic header contains the website navigation-->
+
+        <header>
+
+            <nav>
+                <!--Navigation links added here-->
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <h1>About Me</h1>
+
+            <article>
+                <h2>Who I Am</h2>
+                <img src="images/about-me.png" alt="Photo of Jovitha">
+            </article>
+
+            <article>
+                <h2>Introduction Video</h2>
+
+                <video controls poster="images/about-me.png">
+                    <source src="video/intro.mp4" type="video/mp4">
+                </video>
+            </article>
+
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,128 @@
+<!--Declaration of the doc type being HTML5-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- Specifies UTF-8 character encoding for the webpage -->
+        <meta charset="UTF-8">
+
+        <!-- Makes the browser use the actual width of the device viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Jovitha | Projects</title>
+
+        <!--Week 3 taught me to use seperate CSS
+            stylesheets for different viewport sizes.
+            The browser chooses the appropriate stylesheet based on screen width.
+        -->
+
+        <!-- full-size monitor style sheet-->
+        <link href="css/desktop.css" rel="stylesheet" type="text/css"
+            media="only screen and (min-width:961px)">
+
+        <!-- tablet style sheet-->
+        <link href="css/tablet.css" rel="stylesheet" type="text/css"
+            media="only screen and (min-width:481px) and (max-width:960px)">
+
+        <!-- phone style sheet-->
+        <link href="css/mobile.css" rel="stylesheet" type="text/css"
+            media="only screen and (max-width:480px)">
+
+    </head>
+
+    <body>
+        <!-- This semantic header contains the website navigation-->
+
+        <header>
+
+            <nav>
+                <!--Navigation links added here-->
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+
+            </nav>
+
+        </header>
+        
+        <!--Main content of the Project page-->
+        <main>
+
+            <h1>My Projects</h1>
+
+            <!--project articles-->
+            <!--Each project is a self-contained pieces of content.
+            Due to this, I'm using <article> which is an appropriate semantic HTML5 element for it.
+            -->
+            <!-- Project 1-->
+            <article>
+                <h2>Echo Match</h2>
+
+                <p>
+                    Echo Match is a Python memory-matching game I created in high school.
+                    Players match the pairs of cards with a nature-themed design and gameplay.
+                </p>
+            </article>
+
+            <!--Project 2-->
+            <article>
+                <h2>Networking Spoofing Security Lab</h2>
+
+                <p>
+                    This group cybersecurity lab explored networking spooging in a controlled virtual 
+                    environment. Tools used included Kali Linux, ireshark, the Linux Terminal, ip, 
+                    Firefox, Nginx, and Nano.
+                </p>
+            </article>
+
+            <!--Project 3-->
+            <article>
+                <h2>Student Grade Management System</h2>
+
+                <p>
+                    This group Python project was developed during my first year of university.
+                    The system records student test grades, calculates averages, determines pass
+                    or fail results and provides the class average.
+                </p>
+            </article>
+
+            <!--Project 4-->
+            <article>
+                <h2>VRF-Lite Networking Lab</h2>
+
+                <p>
+                    This networking lab involved configuring and verifying VRF-Lite and static
+                    routing on Cisco networking equipment. The lab used separate virtual routing
+                    tables to provide connectivity for customers with overlapping addressing schemes.
+                </p>
+            </article>
+
+            <!--Project 5-->
+            <article>
+                <h2>Hack The Box: Junior Cybersecurity Analyst Path</h2>
+
+                <p>
+                    I am currently completing the Junior Cybersecurity Analyst learning path
+                    through hands-on cybersecurity modules. I have completed Introduction to
+                    Information Security and currently working through Networking Fundamentals.
+                </p>
+            </article>
+
+        </main>
+
+                <!--Semantic footer containing contact and copyright information-->
+        <footer>
+
+            <p>
+                Contact: jovitha.dogga@ontariotechu.net
+            </p>
+
+            <p>
+                &copy; 2026 Jovitha. All rights reserved.
+            </p>
+        </footer>
+        
+    </body>
+</html>
